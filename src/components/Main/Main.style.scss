@@ -1,0 +1,88 @@
+.main{
+    background: url('../../assets/images/black_bg1.jpg');
+    background-size: cover;
+    position: relative;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.521);
+    z-index: 10;
+    .background-blure{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: rgba(57, 57, 57, 0.88);
+        z-index: 0;
+        backdrop-filter: blur(10px);
+    }
+    .wrapper{
+        position: relative;
+        padding: 0 100px 0 100px;
+        z-index: 1;
+        .content{
+            display: flex;
+            padding: 200px 0 200px 0;
+            .avatar{      
+                img{
+                    perspective: 1000px;
+                    width: 290px;
+                    height: 290px;
+                    border-radius: 50%;
+                    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.479);
+                }
+            }
+            .info{
+                padding-left: 25px;
+                .name{
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 45px;
+                    line-height: 50px;
+                }
+                .position {
+                    color: #F4F4F4;
+                    font-weight: 300;
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                }
+                .read_down{
+                    padding: 0;
+                    font-size: 16px;
+                    background: none;
+                    border: none;
+                    color: #0070AE;
+                    transition: 0.2s;
+                    &:focus{
+                        outline: none;
+                    }
+                    &:hover{
+                        color: #0089d3;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .main{
+        .wrapper{
+            padding: 0 50px 0 50px;
+            .content{
+                flex-direction: column;
+                padding: 100px 0 100px 0;
+                .avatar{ 
+                    margin-bottom: 20px;
+                }
+                .info{
+                    padding-left: 0;
+                    .read_down{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

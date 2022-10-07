@@ -1,0 +1,21 @@
+.title-page{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    position: rleative;
+    z-index: 1;
+
+    h1{
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 52px;
+    }
+    .liner{
+        margin: 0 auto;
+        margin-top: 7px;
+        height: 2px;
+        width: 100px;
+    }
+}

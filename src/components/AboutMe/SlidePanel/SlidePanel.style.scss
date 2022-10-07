@@ -1,0 +1,103 @@
+.slide-panel{
+    display: flex;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    button{
+        width: 40px;
+        height: 40px;
+        background: #848484;
+        border: none;
+        position: relative;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.384));
+        transition: 0.3s;
+        &:hover{
+            background: #5c5c5c; 
+            transition: 0.3s;
+        }
+        &:focus{
+            outline: none;
+        }
+        img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .points{
+        display: flex;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        .point{
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+            background: #848484;
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.397));
+        }
+        .point-active{
+            width: 10px;
+            height: 10px;
+            margin: 5px;
+            border-radius: 50%;
+            background: #414141;
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.397));
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .slide-panel{
+        display: flex;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        button{
+            width: 40px;
+            height: 40px;
+            background: #848484;
+            border: none;
+            position: relative;
+            filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.384));
+            transition: 0.3s;
+            &:hover{
+                background: #5c5c5c; 
+                transition: 0.3s;
+            }
+            &:focus{
+                outline: none;
+            }
+            img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        .points{
+            display: flex;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+            .point{
+                width: 10px;
+                height: 10px;
+                margin: 5px;
+                border-radius: 50%;
+                background: #848484;
+                filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.397));
+            }
+            .point-active{
+                width: 10px;
+                height: 10px;
+                margin: 5px;
+                border-radius: 50%;
+                background: #414141;
+                filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.397));
+            }
+        }
+    }
+}

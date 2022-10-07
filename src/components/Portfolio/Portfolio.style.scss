@@ -1,0 +1,38 @@
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    background: url('../../assets/images/black_bg2.jpg');
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.514);
+    z-index: 2;
+
+    .background-blure{
+        position: absolute;
+        top: 0;
+        left: 0;
+        inset: 0;
+        background: rgba(31, 31, 31, 0.849);
+        backdrop-filter: blur(10px);
+        z-index:0;
+    }
+
+    .wrapper{
+        padding: 0 100px 50px 100px;
+    }
+
+    .projects{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        perspective: 1000px;       
+    }
+}
+
+@media (max-width: 800px){
+    .portfolio{
+        .wrapper{
+            padding: 0 20px 50px 20px;
+        }
+    }
+}

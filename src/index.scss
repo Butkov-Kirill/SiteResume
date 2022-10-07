@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    button{
+        cursor: none;
+    }
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: local('☺'), url('./assets/fonts/Oswald/Oswald.ttf') format('ttf'),
+    url('./assets/fonts/Oswald/Oswald.otf') format('otf'),
+    url('./assets/fonts/Oswald/Oswald.eot') format('eot'),
+    url('./assets/fonts/Oswald/Oswald.woff') format('woff'),
+    url('./assets/fonts/Oswald/Oswald.woff2') format('woff2');
+    font-style: normal;
+  }
